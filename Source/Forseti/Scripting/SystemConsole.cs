@@ -21,9 +21,9 @@ namespace Forseti.Scripting
 
       Console.Write(" Spec( {0} ) ", description);
       Console.ForegroundColor = ConsoleColor.Red;
-      Console.Write("FAILED");
+      Console.Write("FAILED "); // added space here to avoid cut of D char in some fonts in the console. 
       Console.ResetColor();
-      Console.WriteLine(" with message : {0}", message);
+      Console.WriteLine("with message : {0}", message);
     }
 
     public static void ReportPassedCase(string description)
