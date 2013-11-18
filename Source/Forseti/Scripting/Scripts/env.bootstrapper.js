@@ -1,24 +1,27 @@
-﻿function executeSpecs() {
-    try {
-        Envjs.log = function (string) {
-            return;
-        };
+﻿function executeSpecs()
+{
+  try
+  {
+    Envjs.log = function (string)
+    {
+      return;
+    };
 
-        Envjs({
-            scriptTypes: {
-                '': true,
-                'text/javascript': true,
-                'text/envjs': false
-            }
-        });
+    Envjs({
+      scriptTypes: {
+        '': true,
+        'text/javascript': true,
+        'text/envjs': false
+      }
+    });
 
-        var self = this;
+    var self = this;
 
-        window.onload = function () {
-        }
+    window.onload = function () { };
 
-        window.location = window.pagePath; 
-    } catch( exception ) {
-        print("EXCEPTION : "+exception);
-    }
+    window.location = window.pagePath;
+  } catch (exception)
+  {
+    print("EXCEPTION : " + exception);
+  }
 }
